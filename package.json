@@ -1,0 +1,19 @@
+{
+  "name": "doujabouladham_3_21052021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Douja90/DoujaBouladham_3_21052021.git"
+  },
+  "author": "Bouladham Douja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Douja90/DoujaBouladham_3_21052021/issues"
+  },
+  "homepage": "https://github.com/Douja90/DoujaBouladham_3_21052021#readme"
+}
