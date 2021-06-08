@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch ./sass/index.scss:./index.css"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Douja90/DoujaBouladham_3_21052021/issues"
   },
-  "homepage": "https://github.com/Douja90/DoujaBouladham_3_21052021#readme"
+  "homepage": "https://github.com/Douja90/DoujaBouladham_3_21052021#readme",
+  "dependencies": {
+    "node": "^16.1.0"
+  }
 }
