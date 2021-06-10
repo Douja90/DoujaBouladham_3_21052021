@@ -1,0 +1,17 @@
+@media screen and (max-width : 1024px){
+    .fonction{
+        margin: 0;    
+       
+    &__steps{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    &__step{
+        margin: 10px;
+        
+       
+
+    }
+}
+}
