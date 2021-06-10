@@ -1,0 +1,22 @@
+@media screen and (min-width : 736px)  {
+    .fonction{
+        margin: 0;    
+       
+    &__steps{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    &__step{
+        flex: 1;
+        margin: 0;
+        margin-left: 2rem;
+
+    }
+}
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      
+    }
+}
