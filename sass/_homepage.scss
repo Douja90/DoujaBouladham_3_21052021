@@ -14,7 +14,7 @@
   }
 
   &__text {
-    font-weight: 700;
+    font-weight: 800;
   }
 }
 
@@ -25,10 +25,11 @@
 
   &__title {
     margin: 0;
+    font-weight: 600;
   }
 
   &__subtitle {
-    font-weight: 300;
+    font-weight: 400;
     margin: 1.5rem 0;
   }
 
@@ -95,6 +96,10 @@
 .restaurants {
   background-color: #f6f6f6;
   padding: ($appPadding + 1rem) $appPadding;
+
+  &__title{
+    margin: 0.75rem;
+  }
 }
 
 .cards {
@@ -102,6 +107,8 @@
   grid-template-columns: repeat(1, 1fr);
   column-gap: 2rem;
   row-gap: 2rem;
+  margin: 0.75rem;
+  
 }
 
 .card {
@@ -113,7 +120,7 @@
   display: block;
 
   &__img {
-    height: 12rem;
+    height: 10rem;
     width: 100%;
     border: transparent solid 0px;
     border-radius: 1rem 1rem 0 0;
