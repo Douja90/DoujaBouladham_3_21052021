@@ -1,10 +1,16 @@
-
+.header{
+  margin: 0;
+  
+  &__logo{
+    font-size: 1.9rem;
+  }
+}
 .paris {
   display: flex;
   justify-content: center;
   padding: 1.25rem $appPadding;
   background-color: rgb(243, 243, 243);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   position: relative;
 
   &__icon {
@@ -14,7 +20,7 @@
   }
 
   &__text {
-    font-weight: 800;
+    font-weight: 400;
   }
 }
 
@@ -30,7 +36,7 @@
 
   &__subtitle {
     font-weight: 400;
-    margin: 1.5rem 0;
+    margin-bottom: 50px;
   }
 
   &__btn {
@@ -43,6 +49,7 @@
 
   &__title {
     margin-top: 0;
+    margin-left: 1.2rem;
   }
 
   &__steps {
@@ -170,6 +177,7 @@
   }
 
   &__icon{
-    background-color: white!important;
+    height: 25px;
+    width: 25px;
   }
 }

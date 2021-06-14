@@ -7,7 +7,7 @@ body, html {
 }
 
 .page{
-  max-width: 1750px;
+  max-width: 1600px;
   margin: auto;
   position: relative;
 }
@@ -17,7 +17,7 @@ $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $appPadding: 1rem;
 
-@mixin button ($type) {
+@mixin button($type) {
   border: 0;
   padding: 0.75rem 1.5rem;
   font-weight: 500;
@@ -32,7 +32,7 @@ $appPadding: 1rem;
 
   &:hover {
     background-color: white;
-    
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);
   }
 
   a {
@@ -64,6 +64,7 @@ $appPadding: 1rem;
   .container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding: $appPadding;
   }
   
@@ -72,25 +73,18 @@ $appPadding: 1rem;
     font-family: "Shrikhand", "cursive";
     margin: 0;
     font-size: 1.2rem;
-    margin-bottom: $appPadding;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+
   }
 
   &__list {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding-left: 0;
+    margin-bottom: 0.5rem;
   }
-
-  &__listElt {
-    margin: 0.5rem 0;
-
-    &:first-child {
-      margin-top: 0;
-    }
-
-    &:last-child {
-      margin-bottom: 0;
-    }
+  &__lists{
+    margin-bottom: 0.5rem;
   }
 
   &__link {

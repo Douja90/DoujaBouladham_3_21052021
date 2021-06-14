@@ -1,4 +1,4 @@
-@media screen and (max-width : 1024px){
+@media screen and (min-width : 667px) and  (max-width : 1024px){
     .fonction{
         margin: 0;    
        
@@ -8,10 +8,27 @@
         justify-content: space-evenly;
     }
     &__step{
-        margin: 10px;
-        
-       
+        margin: 10px; 
 
     }
 }
+.submenus{
+    display: flex;
+    flex-direction: column;
+}
+.footer {
+        
+        
+    &__logo {
+      text-align: center;
+      margin-bottom: 0.8rem;
+  
+    }
+  
+    &__list {
+     display: flex;
+     justify-content: space-around;
+    }
+   
+    }
 }
