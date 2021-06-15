@@ -1,7 +1,10 @@
 @media screen and (min-width : 667px) and  (max-width : 1024px){
     .fonction{
-        margin: 0;    
-       
+        margin: 0;
+
+    &__title {
+        margin-left: 0.1rem;
+        }    
     &__steps{
         display: flex;
         flex-direction: column;
