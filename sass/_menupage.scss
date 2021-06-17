@@ -30,6 +30,9 @@
     border-radius: 2rem 2rem 0 0;
     background-color: #f6f6f6;
     position: relative;
+    // transform: scale(1);
+    // transition-property: transform;
+    // transition-duration: 5s;
   
     &__header {
       padding: 1rem 2rem 0 1rem;
@@ -135,18 +138,21 @@
     &__confirmation {
       background-color: $color-tertiary;
       margin: -1rem -5rem -1rem 1rem;
-      width: 5rem;
-      height: 4.55rem;
-      border-top-right-radius:0.5rem;
-      border-bottom-right-radius: 0.5rem;
+      width: 3.5rem;
+      height: 5rem;
+      border-top-right-radius:0.75rem;
+      border-bottom-right-radius: 0.75rem;
       display:flex;
       align-items: center;
       justify-content:center;
       transition-duration: 0.5s;
+      transform: translate(40%);
     }
   
     &:hover &__confirmation {
-      margin-right: -1rem;
+      margin-right: -0.4rem;
+      transform: translate(40%);
+      
     }
   
     &__wrapIcon {
@@ -175,8 +181,15 @@
       justify-content:center;
       margin: 10px;
   
-    }
+      :hover{
 
+      }
+      :active{
+        
+      }
+    }
+    
+  
   }
   
   .wrapBtn {
