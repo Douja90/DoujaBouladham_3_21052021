@@ -30,9 +30,7 @@
     border-radius: 2rem 2rem 0 0;
     background-color: #f6f6f6;
     position: relative;
-    // transform: scale(1);
-    // transition-property: transform;
-    // transition-duration: 5s;
+    
   
     &__header {
       padding: 1rem 2rem 0 1rem;
@@ -61,9 +59,12 @@
         opacity: 1;
       }
     }
+  
   }
+  
   .submenus {
     display: grid;
+    transition-delay: 2s;
   }
   
   .submenu {
@@ -100,7 +101,14 @@
     box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
     justify-content: stretch;
     align-items: center;
+    animation: item 1s;
+    animation-fill-mode: both;
+    // animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    // animation-delay: 1s;
+    // animation: linear 2s ease forwards;
+    transform: scale(1);
     max-width: 100%;
+    
   
     &__header {
       white-space: nowrap;
@@ -138,7 +146,7 @@
     &__confirmation {
       background-color: $color-tertiary;
       margin: -1rem -5rem -1rem 1rem;
-      width: 3.5rem;
+      width: 3.9rem;
       height: 5rem;
       border-top-right-radius:0.75rem;
       border-bottom-right-radius: 0.75rem;
@@ -171,22 +179,10 @@
     &:hover &__wrapIcon {
       transform: rotate(0);
     }
- 
-    &__icon {
-      height: 18px;
-      width: 18px;
-      background-color: white;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      margin: 10px;
-  
-      :hover{
-
-      }
-      :active{
-        
-      }
+    
+    &__icon{
+      height: 20px;
+      width: 20px;
     }
     
   

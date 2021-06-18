@@ -68,7 +68,9 @@ body, html {
   margin: 0;
 }
 .header__logo {
-  font-size: 1.9rem;
+  font-size: 2.2rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .paris {
@@ -76,6 +78,7 @@ body, html {
   justify-content: center;
   padding: 1.25rem 1rem;
   background-color: #f3f3f3;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
   font-size: 1.1rem;
   position: relative;
 }
@@ -96,6 +99,7 @@ body, html {
 .home__title {
   margin: 0;
   font-weight: 600;
+  font-size: 1.8rem;
 }
 .home__subtitle {
   font-weight: 400;
@@ -109,14 +113,13 @@ body, html {
   border-radius: 100px;
   color: white;
   background-color: #686868;
-  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9) 0%, rgba(255, 121, 218, 0.9) 100%);
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9) 0%, rgba(255, 121, 218, 0.8) 80%);
   cursor: pointer;
   transition-duration: 0.25s;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
 }
 .home__btn:hover {
-  background-color: white;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+  opacity: 1;
 }
 .home__btn a {
   text-decoration: none;
@@ -128,13 +131,17 @@ body, html {
 }
 .fonction__title {
   margin-top: 0;
-  margin-left: 1.2rem;
+  margin-left: 0.1rem;
 }
 .fonction__steps {
   margin: 0;
   padding: 0;
   list-style: none;
   counter-reset: compteListe;
+  height: 100%;
+}
+.fonction__steps :hover {
+  opacity: 0.8;
 }
 .fonction__step {
   padding: 1.5rem;
@@ -238,9 +245,21 @@ body, html {
   align-items: center;
   justify-content: center;
 }
-.card__icon {
-  height: 25px;
-  width: 25px;
+
+svg {
+  align-items: center;
+  justify-content: center;
+  transform: scale(2.5);
+  margin: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  animation: svg 2s;
+}
+svg:hover {
+  color: #9356DC;
+}
+svg:active {
+  color: #9356DC;
 }
 
 .header__arrow {
@@ -299,6 +318,7 @@ body, html {
 
 .submenus {
   display: grid;
+  transition-delay: 2s;
 }
 
 .submenu {
@@ -329,9 +349,13 @@ body, html {
   flex: 100%;
   border-radius: 0.75rem;
   margin: 1rem 0;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   justify-content: stretch;
   align-items: center;
-  width: 95%;
+  animation: item 1s;
+  animation-fill-mode: both;
+  transform: scale(1);
+  max-width: 100%;
 }
 .menuItem__header {
   white-space: nowrap;
@@ -363,14 +387,40 @@ body, html {
   padding-left: 0.5rem;
   margin: 10px;
 }
-.menuItem__icon {
-  height: 25px;
-  width: 25px;
+.menuItem__confirmation {
+  background-color: #99E2D0;
+  margin: -1rem -5rem -1rem 1rem;
+  width: 3.9rem;
+  height: 5rem;
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+  transform: translate(40%);
+}
+.menuItem:hover .menuItem__confirmation {
+  margin-right: -0.4rem;
+  transform: translate(40%);
+}
+.menuItem__wrapIcon {
+  height: 1.6rem;
+  width: 1.6rem;
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px;
+  border-radius: 100px;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+.menuItem:hover .menuItem__wrapIcon {
+  transform: rotate(0);
+}
+.menuItem__icon {
+  height: 20px;
+  width: 20px;
 }
 
 .wrapBtn {
@@ -388,7 +438,7 @@ body, html {
   border-radius: 100px;
   color: white;
   background-color: #686868;
-  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9) 0%, rgba(255, 121, 218, 0.9) 100%);
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9) 0%, rgba(255, 121, 218, 0.8) 80%);
   cursor: pointer;
   transition-duration: 0.25s;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
@@ -398,8 +448,7 @@ body, html {
   font-size: 1rem;
 }
 .commandBtn:hover {
-  background-color: white;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+  opacity: 1;
 }
 .commandBtn a {
   text-decoration: none;
@@ -409,6 +458,9 @@ body, html {
 @media screen and (min-width: 736px) {
   .fonction {
     margin: 0;
+  }
+  .fonction__title {
+    margin-left: 1.4rem;
   }
   .fonction__steps {
     display: flex;
@@ -443,6 +495,9 @@ body, html {
   .fonction {
     margin: 0;
   }
+  .fonction__title {
+    margin-left: 0.1rem;
+  }
   .fonction__steps {
     display: flex;
     flex-direction: column;
@@ -470,6 +525,19 @@ body, html {
   .page {
     display: block;
     margin: 0, auto;
+  }
+}
+@keyframes item {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes svg {
+  to {
+    color: #9356DC;
   }
 }
 
