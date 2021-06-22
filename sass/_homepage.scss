@@ -2,7 +2,7 @@
   margin: 0;
   
   &__logo{
-    font-size: 2.2rem;
+    font-size: 2rem;
     padding-bottom: 0;
     margin-bottom: 0;
   }
@@ -12,9 +12,12 @@
   justify-content: center;
   padding: 1.25rem $appPadding;
   background-color: rgb(243, 243, 243);
-  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+  box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0.3em -0.1rem 1em rgba(0,0,0,0.2);
   font-size: 1.1rem;
   position: relative;
+  
 
   &__icon {
     margin-right: 1rem;
@@ -30,7 +33,8 @@
 .home {
   padding: 2rem;
   text-align: center;
-  background-color: rgb(250, 250, 250);
+  background-color: rgba(243, 243, 243, 0.7);
+  padding-bottom: 5.5rem;
 
   &__title {
     margin: 0;
@@ -64,7 +68,7 @@
     height: 100%;
 
     :hover{
-      opacity: 0.8;
+      opacity: 0.9;
     }
 
   }
@@ -84,6 +88,7 @@
 
     &:last-child {
       margin-bottom: 0;
+    
     }
 
     &::before {
@@ -104,9 +109,18 @@
 
   &__icon {
     margin-right: 1rem;
-    height: 20px;
-    width: 20px;
+    height: 22px;
+    width: 22px;
+
+    &::after{
+      content: "../images/icons/store-solid.svg)";
+      fill: blueviolet;
+      // background-color: red;
+    }
+
+    
   }
+ 
 }
 
 .restaurants {
@@ -185,40 +199,46 @@
     justify-content:center;
   }
 
-  // &__icon{
-  //   height: 25px;
-  //   width: 25px;
+  &__icon{
+    height: 25px;
+    width: 25px;
     
 
-  //   :hover{
-  //     color: $color-tertiary;
-  //    }
-  //    &::after {
-  //     content: "";
-  //     position: absolute;
-  //     background: radial-gradient(circle, lighten($color-primary, 5) 0%, darken($color-primary, 10) 100%);
-  //     transition: opacity 250ms;
-  // }
-  // }
+    :hover{
+      color: $color-tertiary;
+     }
+     &::after {
+      content:url("../images/icons/heart-solid\ \(1\).svg" );
+      
+      position: absolute;
+      background: radial-gradient(circle, lighten($color-primary, 5) 0%, darken($color-primary, 10) 100%);
+      transition: opacity 250ms;
+  }
+  }
  
 }
-svg {
+// svg {
 
-  align-items:center;
-  justify-content:center;
-  transform: scale(2.5);
-  margin: 10px;
-  cursor: pointer;
-  overflow: hidden;
-  animation: svg 2s;
+//   align-items:center;
+//   justify-content:center;
+//   transform: scale(2.5);
+//   margin: 10px;
+//   cursor: pointer;
+//   overflow: hidden;
+//   animation: svg 2s;
   
-  &:hover {
-    // transform: scale(2.5);
-    color: $color-primary;
+  // &:hover {
+  //   // transform: scale(2.5);
+  //   color: $color-primary;
     
-  }
-  &:active{
-    color: $color-primary;
-  }
+  // }
+  // &:active{
+  //   color: $color-primary;
+  // }
+  // &::after{
+  //   content:url("../images/icons/heart-solid\ \(1\).svg" );
+  //   height: 20px;
+  //   width: 20px;
+  // }
 
-}
+// }
