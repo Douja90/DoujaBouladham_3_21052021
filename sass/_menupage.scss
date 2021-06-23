@@ -82,13 +82,12 @@
       justify-content:center;
       mix-blend-mode: lighten;
     }
-  
-  
     
   }
   .submenus {
     display: grid;
     transition-delay: 2s;
+    margin-right: 0.5rem;
    
   }
   
@@ -102,8 +101,6 @@
     animation-fill-mode: both;
     transform: scale(1);
     
-   
-  
     &__title {
       text-transform: uppercase;
       position: relative;
@@ -215,8 +212,8 @@
     }
     
     &__icon{
-      height: 1.5rem;
-      width: 1.5rem;
+      height: 1.3rem;
+      width: 1.3rem;
     }
  
   }
