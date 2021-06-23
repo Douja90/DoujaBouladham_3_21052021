@@ -105,6 +105,7 @@
       position: absolute;
       left: -0.75rem;
     }
+    
   }
 
   &__icon {
@@ -118,7 +119,13 @@
       // background-color: red;
     }
 
-    
+    &__ svg {
+      cursor: pointer;
+      fill: $color-primary;
+      margin-right: 10px;
+      transition: .4s;
+      width: 20px;
+    }
   }
  
 }

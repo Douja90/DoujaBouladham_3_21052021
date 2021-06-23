@@ -1,24 +1,26 @@
 @keyframes item {
-  0% {
-    transform: scaleY(0)
+  from{
+    transform: scale( 1, 0);
+    opacity: 0.4;
+    // z-index: -1;
   }
  
-
-  100% {
-    transform: scaleY(1);
+  to {
+    transform: scale(1, 1);
+    opacity: 1;
   }
-
+  // from{margin-bottom: 1px;
+  // opacity: 0;
+  // }
+  // // 50%{margin-top: 100px;}
+  // to{margin-top : 0px;
+  // opacity: 1;}
+  
  
  
 }
 
-// @keyframes svg {
- 
-//   to{
-//     color: $color-primary;
-    
-//   }
-// }
+
 @keyframes loader {
   100% {
     opacity: 0.1;

@@ -184,6 +184,13 @@ body, html {
   content: "../images/icons/store-solid.svg)";
   fill: blueviolet;
 }
+.fonction__icon__ svg {
+  cursor: pointer;
+  fill: #9356DC;
+  margin-right: 10px;
+  transition: 0.4s;
+  width: 20px;
+}
 
 .restaurants {
   background-color: #f6f6f6;
@@ -346,9 +353,13 @@ body, html {
 }
 
 .submenu {
-  max-width: 100%;
+  width: 93%;
   overflow: hidden;
   padding: 0 1rem;
+  margin-right: 1rem;
+  animation: item 4s;
+  animation-fill-mode: both;
+  transform: scale(1);
 }
 .submenu__title {
   text-transform: uppercase;
@@ -370,15 +381,15 @@ body, html {
   background-color: white;
   padding: 1rem;
   display: flex;
+  flex: 100%;
   border-radius: 0.75rem;
   margin: 1rem 0;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   align-items: center;
-  animation: item 2s;
+  animation: item 4s;
   animation-fill-mode: both;
-  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
   transform: scale(1);
-  max-width: 100% !important;
+  max-width: 100%;
 }
 .menuItem__header {
   white-space: nowrap;
@@ -425,7 +436,6 @@ body, html {
 }
 .menuItem:hover .menuItem__confirmation {
   margin-right: -0.4rem;
-  transform: translate(40%);
 }
 .menuItem__wrapIcon {
   height: 1.6rem;
@@ -442,8 +452,8 @@ body, html {
   transform: rotate(0);
 }
 .menuItem__icon {
-  height: 20px;
-  width: 20px;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 .wrapBtn {
@@ -553,11 +563,13 @@ body, html {
   }
 }
 @keyframes item {
-  0% {
-    transform: scaleY(0);
+  from {
+    transform: scale(1, 0);
+    opacity: 0.4;
   }
-  100% {
-    transform: scaleY(1);
+  to {
+    transform: scale(1, 1);
+    opacity: 1;
   }
 }
 @keyframes loader {
@@ -581,19 +593,19 @@ body, html {
   }
 }
 .loader {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  background-color: rgba(255, 255, 255, 0.9);
   animation: loader 0.01s;
-  animation-delay: 1.75s;
+  animation-delay: 1.1s;
   animation-fill-mode: both;
-  z-index: 10000;
-  display: flex;
   align-items: center;
+  background-color: #F6F6F6;
+  display: flex;
+  height: 100%;
   justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
 }
 .loader__bar {
   height: 1rem;
