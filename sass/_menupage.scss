@@ -10,17 +10,14 @@
     }
 
     &__logo{
-      margin: 0;
-    }
-  }
-  
+      margin: 0;}
+}
   .homeImg {
     max-width: 100%;
     max-height: 32rem;
     width: 100%;
     object-fit: cover;
   }
-  
   .menu {
     margin-top: -4rem;
     border-radius: 2rem 2rem 0 0;
@@ -70,7 +67,7 @@
     }
   
     &__icon {
-      transition-duration: .25s;
+      transition-duration: 0.25s;
       background-color: #f6f6f6;
       position: absolute;
       top: 0;
@@ -81,14 +78,10 @@
       align-items:center;
       justify-content:center;
       mix-blend-mode: lighten;
-    }
-    
-  }
-  .submenus {
+    }}
+  .submenus{
     display: grid;
-    transition-delay: 2s;
     margin-right: 0.5rem;
-   
   }
   
   .submenu {
@@ -97,7 +90,6 @@
     padding: 0 1rem;
     margin-right: 1rem;
      animation: item 4s;
-    // animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
     animation-fill-mode: both;
     transform: scale(1);
     
@@ -115,8 +107,7 @@
         background-color: $color-tertiary;
         position: absolute;
         left: 0;
-        bottom: 0;
-        
+        bottom: 0; 
       }
     }
   }
@@ -130,16 +121,11 @@
     margin: 1rem 0;
     box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
     align-items: center;
-    // animation: item 2s;
-    // animation-fill-mode: both;
-    // animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
     animation: item 4s;
-    // animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
     animation-fill-mode: both;
     transform: scale(1);
     max-width: 100% ;
-    
-  
+
     &__header {
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -213,18 +199,14 @@
     
     &__icon{
       height: 1.3rem;
-      width: 1.3rem;
+      width: 1.3rem;}
     }
- 
-  }
-  
   .wrapBtn {
     display: flex;
     text-decoration: none;
     justify-content: center;
     padding: 3rem 0;
   }
-  
   .commandBtn {
     @include button(primary);
     cursor: pointer;

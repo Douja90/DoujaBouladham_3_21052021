@@ -68,8 +68,10 @@
     height: 100%;
 
     :hover{
-      opacity: 0.9;
+      opacity: 1;
+      transform: scale(1.01);
     }
+   
 
   }
 
@@ -105,6 +107,7 @@
       position: absolute;
       left: -0.75rem;
     }
+ 
     
   }
 
@@ -113,22 +116,12 @@
     height: 22px;
     width: 22px;
 
-    &::after{
-      content: "../images/icons/store-solid.svg)";
-      fill: blueviolet;
+    &:hover path{
+      fill: $color-primary;
       // background-color: red;
     }
-
-    &__ svg {
-      cursor: pointer;
-      fill: $color-primary;
-      margin-right: 10px;
-      transition: .4s;
-      width: 20px;
-    }
+  } 
   }
- 
-}
 
 .restaurants {
   background-color: #f6f6f6;
