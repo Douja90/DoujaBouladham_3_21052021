@@ -73,12 +73,16 @@ body, html {
   margin-bottom: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .paris {
   display: flex;
   justify-content: center;
   padding: 1.25rem 1rem;
   background-color: #f3f3f3;
-  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0.3em -0.1rem 1em rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -5em 5em rgba(0, 0, 0, 0.096), 0.3em -0.1rem 1em rgba(0, 0, 0, 0.281);
   font-size: 1.1rem;
   position: relative;
 }
@@ -118,11 +122,11 @@ body, html {
   cursor: pointer;
   transition-duration: 0.25s;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  background-color: #9356DC;
 }
 .home__btn:hover {
-  -webkit-tap-highlight-color: transparent;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
-  opacity: 0.9;
+  opacity: 0.8;
 }
 .home__btn a {
   text-decoration: none;
@@ -146,11 +150,12 @@ body, html {
 .fonction__steps :hover {
   opacity: 1;
   transform: scale(1.01);
+  background-color: #f4eefc;
 }
 .fonction__step {
   padding: 1.5rem;
   margin: 1rem 0 1rem 0.75rem;
-  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.082);
   border-radius: 1.25rem;
   background-color: #f6f6f6;
   display: flex;
@@ -256,14 +261,8 @@ body, html {
   height: 25px;
   width: 25px;
 }
-.card__icon :hover {
-  color: #99E2D0;
-}
-.card__icon::after {
-  content: url("../images/icons/heart-solid (1).svg");
-  position: absolute;
-  background: radial-gradient(circle, #a16be0 0%, #782cd3 100%);
-  transition: opacity 250ms;
+.card__icon :hover svg path {
+  fill: linear-gradient(0deg, #9356DC -40%, #FF79DA 100%);
 }
 
 .header__arrow {
@@ -276,6 +275,10 @@ body, html {
 }
 .header__logo {
   margin: 0;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .homeImg {
@@ -319,12 +322,13 @@ body, html {
 .menu__btn::before {
   opacity: 0;
   transition: 0.5s;
-  content: url("../images/icons/heart-solid (1).svg");
+  content: url("../images/icons/heart-solid-color.svg");
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
+  color: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
 }
 .menu__icon {
   transition-duration: 0.25s;
@@ -346,13 +350,12 @@ body, html {
 }
 
 .submenu {
-  width: 93%;
+  width: 100%;
   overflow: hidden;
   padding: 0 1rem;
   margin-right: 1rem;
   animation: item 4s;
-  animation-fill-mode: both;
-  transform: scale(1);
+  max-width: 100%;
 }
 .submenu__title {
   text-transform: uppercase;
@@ -361,11 +364,9 @@ body, html {
   font-weight: normal;
 }
 .submenu__title::after {
-  content: "";
   width: 3rem;
   height: 0.25rem;
   background-color: #99E2D0;
-  position: absolute;
   left: 0;
   bottom: 0;
 }
@@ -468,15 +469,13 @@ body, html {
   cursor: pointer;
   transition-duration: 0.25s;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
   width: 200px;
   height: 50px;
   font-size: 1rem;
 }
 .commandBtn:hover {
-  -webkit-tap-highlight-color: transparent;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
-  opacity: 0.9;
+  opacity: 0.8;
 }
 .commandBtn a {
   text-decoration: none;
@@ -549,19 +548,19 @@ body, html {
     justify-content: space-around;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1400px) {
   .page {
     display: block;
-    margin: 0, auto;
+    margin: 0 auto;
   }
 }
 @keyframes item {
   from {
-    transform: scale(1, 0);
-    opacity: 0.4;
+    transform: translate3d(0px, 20px, 0px);
+    opacity: 0.6;
   }
   to {
-    transform: scale(1, 1);
+    transform: translate3d(0px, 0px, 0px);
     opacity: 1;
   }
 }

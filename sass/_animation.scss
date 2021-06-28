@@ -1,20 +1,14 @@
 @keyframes item {
   from{
-    transform: scale( 1, 0);
-    opacity: 0.4;
+    transform: translate3d(0px,20px,0px);
+    opacity: 0.6;
     // z-index: -1;
   }
  
   to {
-    transform: scale(1, 1);
+    transform: translate3d(0px,0px,0px);
     opacity: 1;
   }
-  // from{margin-bottom: 1px;
-  // opacity: 0;
-  // }
-  // // 50%{margin-top: 100px;}
-  // to{margin-top : 0px;
-  // opacity: 1;}
 }
 
 @keyframes loader {
@@ -37,7 +31,4 @@
   100% {
     transform: translateY(0);
   }
-  // 0% {
-  //   transform: translateY(0);
-  // }
 }
