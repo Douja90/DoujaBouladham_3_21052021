@@ -50,7 +50,6 @@
       justify-content:center;
       cursor: pointer;
       position: relative;
-      // background-color: black;
       
       &:hover::before  {
         opacity: 1;
@@ -178,7 +177,7 @@
   
     &:hover &__confirmation {
       margin-right: -0.4rem;
-      // transform: translate(40%);
+      
       
     }
   
