@@ -52,7 +52,7 @@
 
   &__btn {
     @include button(primary);
-    background-color: $color-primary;
+    
     
   }
 }
@@ -212,9 +212,6 @@
     width: 25px;
     
 
-    :hover svg path{
-      fill: linear-gradient(0deg, $color-primary -40%,$color-secondary 100%);
-     }
 
   }
  

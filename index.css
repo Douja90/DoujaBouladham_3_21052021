@@ -4,12 +4,6 @@ body, html {
   font-family: "Roboto", sans-serif;
 }
 
-.page {
-  max-width: 1600px;
-  margin: auto;
-  position: relative;
-}
-
 .container {
   margin: auto;
   position: relative;
@@ -122,11 +116,10 @@ body, html {
   cursor: pointer;
   transition-duration: 0.25s;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-  background-color: #9356DC;
 }
 .home__btn:hover {
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
-  opacity: 0.8;
+  opacity: 0.7;
 }
 .home__btn a {
   text-decoration: none;
@@ -261,9 +254,6 @@ body, html {
   height: 25px;
   width: 25px;
 }
-.card__icon :hover svg path {
-  fill: linear-gradient(0deg, #9356DC -40%, #FF79DA 100%);
-}
 
 .header__arrow {
   position: absolute;
@@ -328,7 +318,6 @@ body, html {
   left: 0;
   height: 100%;
   width: 100%;
-  color: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
 }
 .menu__icon {
   transition-duration: 0.25s;
@@ -475,7 +464,7 @@ body, html {
 }
 .commandBtn:hover {
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
-  opacity: 0.8;
+  opacity: 0.7;
 }
 .commandBtn a {
   text-decoration: none;
@@ -548,8 +537,8 @@ body, html {
     justify-content: space-around;
   }
 }
-@media screen and (min-width: 1400px) {
-  .page {
+@media screen and (min-width: 1200px) {
+  #page {
     display: block;
     margin: 0 auto;
   }
