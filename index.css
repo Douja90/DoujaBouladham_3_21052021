@@ -179,7 +179,7 @@ body, html {
   height: 22px;
   width: 22px;
 }
-.fonction__icon:hover path {
+.fonction__icon:hover svg path {
   fill: #9356DC;
 }
 
@@ -309,19 +309,8 @@ body, html {
 .menu__btn:hover::before {
   opacity: 1;
 }
-.menu__btn::before {
-  opacity: 0;
-  transition: 0.5s;
-  content: url("../images/icons/heart-solid-color.svg");
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
-.menu__icon {
+.menu__heart svg path {
   transition-duration: 0.25s;
-  background-color: #f6f6f6;
   position: absolute;
   top: 0;
   left: 0;
@@ -331,6 +320,22 @@ body, html {
   align-items: center;
   justify-content: center;
   mix-blend-mode: lighten;
+}
+.menu__heart svg path:hover {
+  display: none;
+}
+
+.menu__btn svg path {
+  cursor: pointer;
+  fill: grey;
+  margin-right: 10px;
+  transition: 0.4s;
+  width: 20px;
+  border: #FF00FF solid 1px;
+}
+.menu__btn svg path:hover {
+  animation: animateHeart 0.4s;
+  fill: #9356DC;
 }
 
 .submenus {
