@@ -92,7 +92,8 @@
     overflow: hidden;
     padding: 0 1rem;
     margin-right: 1rem;
-    animation: item 4s;
+    animation-fill-mode: both;
+    transform: scale(1);
     max-width: 100%;
   
     
@@ -122,9 +123,9 @@
     margin: 1rem 0;
     box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
     align-items: center;
-    animation: item 4s;
-    animation-fill-mode: both;
-    transform: scale(1);
+    // animation: item 4s;
+    // animation-fill-mode: both;
+    // // transform: scale(1);
     max-width: 100% ;
 
     &__header {
